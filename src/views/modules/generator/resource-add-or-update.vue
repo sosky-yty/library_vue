@@ -4,10 +4,10 @@
     :close-on-click-modal="false"
     :visible.sync="visible">
     <el-form :model="dataForm" :rules="dataRule" ref="dataForm" @keyup.enter.native="dataFormSubmit()" label-width="80px">
-    <el-form-item label="" prop="createTime">
+    <el-form-item label="发生时间" prop="createTime">
       <el-input v-model="dataForm.createTime" placeholder=""></el-input>
     </el-form-item>
-    <el-form-item label="" prop="description">
+    <el-form-item label="描述" prop="description">
       <el-input v-model="dataForm.description" placeholder=""></el-input>
     </el-form-item>
     <el-form-item label="" prop="icon">

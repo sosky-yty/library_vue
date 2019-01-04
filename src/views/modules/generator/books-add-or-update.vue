@@ -4,19 +4,19 @@
     :close-on-click-modal="false"
     :visible.sync="visible">
     <el-form :model="dataForm" :rules="dataRule" ref="dataForm" @keyup.enter.native="dataFormSubmit()" label-width="80px">
-    <el-form-item label="" prop="bookName">
+    <el-form-item label="书名" prop="bookName">
       <el-input v-model="dataForm.bookName" placeholder=""></el-input>
     </el-form-item>
-    <el-form-item label="" prop="bookPress">
+    <el-form-item label="类别" prop="bookPress">
       <el-input v-model="dataForm.bookPress" placeholder=""></el-input>
     </el-form-item>
-    <el-form-item label="" prop="bookInventory">
+    <el-form-item label="库存" prop="bookInventory">
       <el-input v-model="dataForm.bookInventory" placeholder=""></el-input>
     </el-form-item>
-    <el-form-item label="" prop="bookAuthor">
+    <el-form-item label="作者" prop="bookAuthor">
       <el-input v-model="dataForm.bookAuthor" placeholder=""></el-input>
     </el-form-item>
-    <el-form-item label="" prop="currentInventory">
+    <el-form-item label="当前库存" prop="currentInventory">
       <el-input v-model="dataForm.currentInventory" placeholder=""></el-input>
     </el-form-item>
     </el-form>
